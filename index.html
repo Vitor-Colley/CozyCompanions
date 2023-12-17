@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <title>Pets  store</title>
+        <!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">		
+		
+		<title>Pets</title>
+		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+		<!-- <link href="mystyles.css" rel="stylesheet"> -->
+		
+			
+			<link href="css/bootstrap.min.css" rel="stylesheet"> 
+			<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital@1&display=swap" rel="stylesheet">
+			<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+			<link rel="stylesheet" href="style.css">
+			<script src="catImage.js"></script>
+      <script src="home.js"></script>
+      <script src="script.js"></script>
+
+      
+			
+    </head>
+
+<body>
+     <div class="container">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="pets.html">Pets</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li ><a href="searchPets.html">Search Pets</a></li>
+          <li><a href="searchProducts.html">Search Products</a></li>
+          <li ><a href="indexApi.html">Learn More</a></li>
+        </ul>    
+      </div>
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="pet-4.jpg">
+            <img src="pet-4.jpg" alt="pets" >
+          </a>
+          <div class="desc">COZY COMPANIONS is recognised as Ireland's leading animal welfare charity.  </div>
+        </div>
+      </div>
+      
+      
+        <div class="responsive">
+          <div class="gallery">
+          <a target="_blank" href="pets-2.jpg">
+            <img src="pets-2.jpg" alt="pets" >
+          </a>
+          <div class="desc">Our mission is that through education, legislation and ongoing support, we can prevent cruelity to all animals.</div>
+        </div>
+        </div>
+     
+      
+        <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="pets.jpg">
+            <img src="pets.jpg" alt="pets" >
+          </a>
+          <div class="desc">We believe that man has a responsibility to care for the earth and all creatures on it, and that each creature has an intrinsic value, entirely independent of its value to man, and should be respected and protected.</div>
+        </div>
+      </div>
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="pet-1.jpg">
+            <img src="pet-1.jpg" alt="pets" >
+          </a>
+          <div class="desc">We believe that all animals kept by, or under the control of, humans must be kept in circumstances appropriate to their species.</div>
+        </div>
+      </div>
+    
+  
+
+    <div class="petBreed">
+      <label for="dogBreed">Select Dog Breed:</label>
+      <select id="dogBreed">
+          <!-- Options will be dynamically populated -->
+      </select>
+      <br><br>
+      <label for="subBreed" id="subBreedLabel">Select Sub-Breed:</label>
+      <select id="subBreed"></select>
+      <br><br>
+      <button id="submit" onclick="getImage()">Get Image</button>
+      <br><br>
+      <div id="imageContainer"></div>
+  </div>
+    
+  <div class="catImageContainer">
+    <button onclick="getRandomCatImage()">Get Cat Image</button>
+    <br>
+    <img id="catImage" alt="Random Cat Image">
+</div>
+       
+  
+<div class="container_2">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your email..">
+   
+    <label for="county">County</label>
+    <select id="county" name="county">
+      <option value="Dublin">Dublin</option>
+      <option value="Kildare">Kildare</option>
+      <option value="Wicklow">Wicklow</option>
+    </select>
+    
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+
+<footer>
+  <div class="flexwrap">
+    <div id="footer" class="col col-sm-7 col-lg-7 hidden-sm col-md-7 flexCol">
+      <div class="module autospacer"></div>
+       <div class="flexWrap"> 
+        <div id="m1603" class="module text">
+          <p class="lightbodytext">Mayor square &nbsp;<a href="/contact" data-track-event="click" data-track-action="internal_link_clicked">
+            <span data-global="phone" class="monoglobalWrap">(01) 318 47953</span></a> | Ranlagh <a href="/contact" data-track-event="click" data-track-action="internal_link_clicked">(01) 294 19428</a></p>
+          <p class="lightbodytext"><span style="font-weight: bold;">Free Shipping On products Over €100</span></p>
+          <p class="lightbodytext"><span class="iconfont "></span> Delivery From €7.99 Nationwide</p></div> </div> <div class="module autospacer"></div> </div>
+  </div>
+ 
+
+</footer>
+<script src="home.js"></script>
+<script src="catImage.js"></script>
+
+
+</body>
+</html>

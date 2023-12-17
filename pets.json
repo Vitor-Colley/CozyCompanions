@@ -1,0 +1,136 @@
+ {
+    "Animals":[
+    {
+        "Name": "Lucy",
+        "Gender": "Female",
+        "Breed": "Poodle",
+        "Vaccination": [
+            "Rabbies Vaccine",
+            "Distemper Vaccine"
+        ],
+        "Species": "Dog",
+        "Rescue_Date": "12/10/2023",
+        "Age": 5,
+        "AdoptionFee": 100.00  
+    },
+
+
+        {
+        "Name": "Tim",
+        "Gender": "Male",
+        "Breed": "Husky",
+        "Vaccination": 
+        [
+            "Rabbies Vaccine"
+        ],
+        "Species": "Dog",
+        "Rescue_Date": "25/9/2023",
+        "Age": 3,
+        "AdoptionFee": 150.00
+        },
+
+        {
+        "Name": "Jo",
+        "Gender": "Female",
+        "Breed": "RagDoll",
+        "Vaccination": 
+        [
+         "Feline Viral Rhinotracheitis (FVR) Vaccine",
+        "Feline Calicivirus (FCV) Vaccine"
+        ],
+        "Species": "Cat",
+        "Rescue_Date": "12/11/2023",
+        "Age": 7,
+        "AdoptionFee": 250.00
+        },
+
+        {
+        "Name": "Alex",
+        "Gender": "Male",
+        "Breed": "Turkish Van",
+        "Vaccination": [
+        "Feline Calicivirus (FCV) Vaccine"
+        ],
+        "Species": "Cat",
+        "Rescue_Date": "01/08/2023",
+        "Age": 5,
+        "AdoptionFee": 200.00
+        },
+        {
+        "Name": "Sweety",
+        "Gender": "Female",
+        "Breed": "Mallard",
+        "Vaccination": [
+        "Duck Viral Enteritis (DVE) Vaccine",
+        "Botulism Vaccine"
+        ],
+        "Species": "Duck",
+        "Rescue_Date": "20/03/2023",
+        "Age": 3,
+        "AdoptionFee": 180.00
+        },
+
+        {
+         "Name": "Mickey",
+        "Gender": "Male",
+        "Breed": "Pekin",
+        "Vaccination": [
+        "Duck Viral Enteritis (DVE) Vaccine",
+        "Botulism Vaccine"
+        ],
+        "Species": "Duck",
+        "Rescue_Date": "10/11/2023",
+        "Age": 7,
+        "AdoptionFee": 150.00
+        },
+        {
+         "Name": "Sam",
+        "Gender": "Female",
+        "Breed": "Mini Lop",
+        "Vaccination": [
+         "Rabbit Hemorrhagic Disease (RHD) Vaccine",
+        "Myxomatosis Vaccine"
+        ],
+        "Species": "Rabbit",
+        "Rescue_Date": "01/01/2023",
+        "Age": 7,
+        "AdoptionFee": 300.00
+        },
+        {
+        "Name": "Jack",
+        "Gender": "Male",
+        "Breed": "Lop Eared",
+        "Vaccination": [
+        "Rabbit Hemorrhagic Disease (RHD) Vaccine",
+        "Myxomatosis Vaccine"
+        ],
+        "Species": "Rabbit",
+        "Rescue_Date": "72/08/2023",
+        "Age": 7,
+        "AdoptionFee": 350.00
+        },
+        {
+        "Name": "Maya",
+        "Gender": "Female",
+        "Breed": "White Cloud ",
+        
+        "Species": "Fish",
+        "Rescue_Date": "16/06/2023",
+        "Age": 7,
+        "AdoptionFee": 90.00
+        },
+    
+        {
+            "Name": "Cody",
+        "Gender": "Female",
+        "Breed": "GoldFish",
+        
+        "Species": "Fish",
+        "Rescue_Date": "12/03/2023",
+        "Age": 7,
+        "AdoptionFee": 70.00
+        }
+
+    
+    ]
+ }

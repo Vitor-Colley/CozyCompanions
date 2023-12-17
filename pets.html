@@ -1,0 +1,269 @@
+<!--Prathibha did this -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pets</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel=stylesheet href="style.css">
+    </link>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row"> 
+            <div class="col-sm-7">
+               
+            </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="pets.html">Pets</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="searchPets.html">Search Pets</a></li>
+                    <li><a href="searchProducts.html">Search Products</a></li>
+                    <li ><a href="indexApi.html">Learn More</a></li>
+              </ul>  
+        </div>
+      </div>
+      </div>
+    <h1 id="hover">Welcome to the pets section of CozyCompanions !</h1>
+    <br></br>
+    <h3 id="change">Here are 10 cute and fluffy animals waiting for your attention and love :)</h3>
+    <br>
+    <div class="pets">
+        <img src="dog.jpeg" class="bordered-image">
+        <img src="cat.jpeg" class="bordered-image">
+        <img src="duck.jpeg" class="bordered-image">
+        <img src="rabbit.jpeg" class="bordered-image">
+        <img src="fish.jpeg" class="bordered-image">
+    </div>
+<br>
+<div id="container">
+    <button id="myButton">Click me for more information about adoption, keep clicking</button>
+    <div id="fact-display"></div>
+</div>
+    <div id="animalList"></div>
+   
+    
+    <script>
+         $(document).ready(function () {
+                var facts = ["These are lovely pets that have been rescued from around dublin and brought to our rescue center.",
+                    "They are waiting to go to a lovely home and get pampered !",
+                    "Please look at the list below and choose a pet that seems as a perfect addition to your family"
+
+                ];
+                var factDisplay = $("#fact-display");
+                $('#myButton').on('click', function () {
+                    var randomIndex = Math.floor(Math.random() * facts.length);
+                    var randomFacts = facts[randomIndex];
+                    factDisplay.text(randomFacts);
+                });
+            });
+
+        $("#hover").hover(function () {
+            alert("Cuteness Ahead !");
+        },
+            function () {
+                alert("These pets cant wait to be home with you !!");
+            });
+        $("#change").on({
+            mouseenter: function () {
+                $(this).css("background-color", "blue");
+            },
+            mouseleave: function () {
+                $(this).css("background-color", "lightblue");
+            },
+            click: function () {
+                $(this).css("background-color", "red");
+            }
+        });
+
+
+        const Animals = {
+            "Animals": [
+                {
+                    "Name": "Lucy",
+                    "Gender": "Female",
+                    "Breed": "Poodle",
+                    "Vaccination": [
+                        "Rabbies Vaccine",
+                        "Distemper Vaccine"
+                    ],
+                    "Species": "Dog",
+                    "Rescue_Date": "12/10/2023",
+                    "Age": 5,
+                    "AdoptionFee": 100.00
+                },
+
+
+                {
+                    "Name": "Tim",
+                    "Gender": "Male",
+                    "Breed": "Husky",
+                    "Vaccination":
+                        [
+                            "Rabbies Vaccine"
+                        ],
+                    "Species": "Dog",
+                    "Rescue_Date": "25/9/2023",
+                    "Age": 3,
+                    "AdoptionFee": 150.00
+                },
+
+                {
+                    "Name": "Jo",
+                    "Gender": "Female",
+                    "Breed": "RagDoll",
+                    "Vaccination":
+                        [
+                            "Feline Viral Rhinotracheitis (FVR) Vaccine",
+                            "Feline Calicivirus (FCV) Vaccine"
+                        ],
+                    "Species": "Cat",
+                    "Rescue_Date": "12/11/2023",
+                    "Age": 7,
+                    "AdoptionFee": 250.00
+                },
+
+                {
+                    "Name": "Alex",
+                    "Gender": "Male",
+                    "Breed": "Turkish Van ",
+                    "Vaccination": [
+                        "Feline Calicivirus (FCV) Vaccine"
+                    ],
+                    "Species": "Cat",
+                    "Rescue_Date": "01/08/2023",
+                    "Age": 5,
+                    "AdoptionFee": 200.00
+                },
+                {
+                    "Name": "Sweety",
+                    "Gender": "Female",
+                    "Breed": "Mallard",
+                    "Vaccination": [
+                        "Duck Viral Enteritis (DVE) Vaccine",
+                        "Botulism Vaccine"
+                    ],
+                    "Species": "Duck",
+                    "Rescue_Date": "20/03/2023",
+                    "Age": 3,
+                    "AdoptionFee": 180.00
+                },
+
+                {
+                    "Name": "Mickey",
+                    "Gender": "Male",
+                    "Breed": "Pekin",
+                    "Vaccination": [
+                        "Duck Viral Enteritis (DVE) Vaccine",
+                        "Botulism Vaccine"
+                    ],
+                    "Species": "Duck",
+                    "Rescue_Date": "10/11/2023",
+                    "Age": 7,
+                    "AdoptionFee": 150.00
+                },
+                {
+                    "Name": "Sam",
+                    "Gender": "Female",
+                    "Breed": "Mini Lop",
+                    "Vaccination": [
+                        "Rabbit Hemorrhagic Disease (RHD) Vaccine",
+                        "Myxomatosis Vaccine"
+                    ],
+                    "Species": "Rabbit",
+                    "Rescue_Date": "01/01/2023",
+                    "Age": 7,
+                    "AdoptionFee": 300.00
+                },
+                {
+                    "Name": "Jack",
+                    "Gender": "Male",
+                    "Breed": "Lop Eared",
+                    "Vaccination": [
+                        "Rabbit Hemorrhagic Disease (RHD) Vaccine",
+                        "Myxomatosis Vaccine"
+                    ],
+                    "Species": "Rabbit",
+                    "Rescue_Date": "72/08/2023",
+                    "Age": 7,
+                    "AdoptionFee": 350.00
+                },
+                {
+                    "Name": "Maya",
+                    "Gender": "Female",
+                    "Breed": "White Cloud ",
+                    "Vaccinations": [
+                        "No specific vaccination but have been maintained in a hygienic environment"
+                    ],
+                    "Species": "Fish",
+                    "Rescue_Date": "16/06/2023",
+                    "Age": 7,
+                    "AdoptionFee": 90.00
+                },
+
+                {
+                    "Name": "Cody",
+                    "Gender": "Female",
+                    "Breed": "GoldFish",
+                    "Vaccinations": [
+                        "No specific vaccination but have been maintained in a hygienic environment"
+                    ],
+                    "Species": "Fish",
+                    "Rescue_Date": "12/03/2023",
+                    "Age": 7,
+                    "AdoptionFee": 70.00
+                }
+
+
+            ]
+        };
+
+       
+        const animalListDiv = document.getElementById('animalList');
+        const ul = document.createElement('ul');
+        Animals.Animals.forEach(animal => {
+            const li = document.createElement('li');
+            li.innerHTML = `
+            <br>
+        <strong>${animal.Name}<br></strong>
+        Gender:${animal.Gender}<br>
+        <em>Breed: ${animal.Breed}</em><br>
+         Vaccinations: ${animal.Vaccination}<br>
+        Species: ${animal.Species}<br>
+        Date of Rescue: ${animal.Rescue_Date}<br>
+         Age:${animal.Age}<br>
+         Adoption Fee: ${animal.AdoptionFee}
+    `;
+            ul.appendChild(li);
+        });
+
+        animalListDiv.appendChild(ul);
+
+        $(document).ready(function () {
+            $("img").on({
+                mouseenter: function () {
+                    $(this).attr("width", "500px");
+                },
+                mouseleave: function () {
+                    $(this).attr("width", "300px");
+                },
+                click: function () {
+                    $(this).hide();
+                }
+            });
+        });
+           
+
+        
+        
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Search</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital@1&display=swap" rel="stylesheet">
+        
+        
+    </head>
+    <body>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pets.html">Pets</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="searchPets.html">Search Pets</a></li>
+            <li class="active"><a href="searchProducts.html">Search Products</a></li>
+            <li><a href="indexApi.html">Learn More</a></li>
+          </ul>  
+        <h1 class="searchP">How can we help you today?</h1>
+        
+        <form class="VForm">
+            <label>Enter the category of the product or species:</label>
+            <input id="searchPd" type="text">
+            <button onclick="searchProduct();return false">Search</button>
+            <button>Clear</button>
+        </form>
+        <table id="tablePd">
+            <tr>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Species</th>
+                <th>Age</th>
+                <th>Quantity</th>
+                <th>Kg</th>
+                <th>Price</th>
+            </tr>
+        </table>
+    </body>
+</html>

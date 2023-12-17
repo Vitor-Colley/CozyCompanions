@@ -1,0 +1,141 @@
+{
+    "products":[
+      {
+        "id": 1 ,
+        "name": "Royal Canin Kitten",
+        "Category": "Food",
+        "Species": "Cat",
+        "Expiry Date":"09/07/2026",
+        "Age": "Adult",
+        "Quantity": 1,
+        "Kg":15,
+      
+        "Price":[
+           
+            105.99
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Royal Canin ",
+        "Category": "Food",
+        "Species": "dog",
+        "Expiry Date":"31/04/2026",
+        "Age": "Adult",
+        "Quantity": 1,
+        "image": "https://images.dog.ceo/breeds/poodle-medium/WhatsApp_Image_2022-08-06_at_4.48.38_PM.jpg",
+        
+        "Kg":18,
+        "Price":[
+            
+            107.99
+        ]
+      },
+      {
+        "id": 3,
+        "name": "7pcs Dog Brush Grooming Set ",
+        "Category": "Brush",
+        "Species": " Other Pets",
+        "Age": "Adult",
+        "image":"https://images.dog.ceo/breeds/terrier-irish/n02093991_1243.jpg",
+        "Quantity": 1,
+        "Price":[
+          
+            15.74
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Jumping Stars Cat Toys",
+        "Category": "Toys",
+        "Species": "Cat",
+        "Quantity": 2,
+        "Price":[
+          
+            3.19
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Hugro Hemp Bedding",
+        "Category": "Toys",
+        "Species": "Rabbit",
+        "Quantity": 1,
+        "Price":[
+          
+            18.19
+        ]
+      },
+      {
+        "id": 6 ,
+        "name": "RROYAL CANIN Maxi Puppy",
+        "Category": "Food",
+        "Species": "Dog",
+        "Expiry Date":"15/01/2026",
+        "Age": "Puppy",
+        "Quantity": 1,
+        "image": "catfood.jpeg",
+        "status": "success",
+        "Kg":15,
+        "Price":[
+         
+            178.90
+        ]
+      },
+      {
+        "id": 7,
+        "name": "AniOne Collections toy for cats",
+        "Category": "Toy",
+        "Species": "Cat",
+        "Quantity": 1,
+        "Kg":15,
+        "Price":[
+         
+            10.80
+        ]
+      },
+      {
+        "id": 8 ,
+        "name": "MultiFit staple food for aquarium fishes",
+        "Category": "Food",
+        "Species": "Fish",
+        "Expiry Date":"09/05/2026",
+        "Quantity": 1,
+        "Ml":250,
+        "Price":[
+         
+            9.30
+        ]
+      },
+       
+      {
+        "id": 9,
+        "name": "MultiFit staple food for aquarium fishes",
+        "Category": "Food",
+        "Species": "Fish",
+        "Expiry Date":"10/05/2026",
+        "Quantity": 1,
+        "Ml":250,
+        "Price":[
+         
+            7.30
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Go Native Duck with Apple",
+        "Category": "Food",
+        "Species": "Duck",
+        "Expiry Date":"21/11/2026",
+        "Quantity": 1,
+        "Kg":12,
+        "Price":[
+         
+            250.80
+        ]
+      }
+        
+       
+]
+}
+  

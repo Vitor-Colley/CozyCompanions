@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>SHOP TO ANIMAL FOOD </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row"> 
+            <div class="col-sm-7">
+                
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pets.html">Pets</a></li>
+                <li class="active"><a href="products.html">Products</a></li>
+                <li><a href="searchPets.html">Search Pets</a></li>
+                <li><a href="searchProducts.html">Search Products</a></li>
+                <li ><a href="indexApi.html">Learn More</a></li>
+            </ul>  
+         
+        </div>
+      </div>
+      </div>
+    <h1>PRODUCTS</h1>
+    <h2 id="head">These are the prodcuts that your pets would love to have !</h2>
+
+
+    <button id="hide">Hide</button>
+    <p class="hiddenp">These are genuine products and are really healthy for your pets</p>
+    <p class="hiddenp">These authentic products boast a remarkable blend of quality and nutritional excellence, ensuring the well-being of your beloved pets.</p>
+    <p class="hiddenp">Meticulously crafted to provide optimum health benefits, each item reflects a commitment to their vitality, offering a diverse range that </p>
+    <p class="hiddenp">aligns with the unique needs of different species. With a focus on wholesome ingredients and careful formulation, these offerings </p>
+    <p class="hiddenp">stand as a testament to our dedication to the health and happiness of your cherished animal companions. Your pets deserve nothing,</p>
+    <p class="hiddenp">less than the finest, and our collection embodies the essence of genuine care and nourishment.</p>
+
+    <div id="productsList"></div>
+    <button id="myButton">Order</button>
+    <div class="catfood">
+        <img src="catfood.jpeg">
+        <img src="dog.jpg">
+        <img src="Brush.jpeg">
+        <img src="fish2.jpeg">
+        <img src=" Puppy.jpeg">
+
+    
+
+        </br>
+    </div>
+
+        <canvas id="chart"></canvas>
+    
+  
+ 
+    <script>
+      
+        $(document).ready(function () {
+            $("#head").on({
+                mouseenter: function () {
+                    $(this).css("background-color", "pink");
+                },
+                mouseleave: function () {
+                    $(this).css("background-color", "blue");
+                },
+                click: function () {
+                    $(this).css("background-color", "red");
+                }
+            });
+        });
+
+        $(document).ready(function () {
+            $("#hide").click(function () {
+                if ($("p.hiddenp").is(":visible")) $("#hide").text('Show');
+                else $("#hide").text('Hide');
+                $("p.hiddenp").toggle(1000);
+            });
+        });
+
+        $(document).ready(function () {
+            var facts = ["Thank you for ORDER",
+                "Hope your pets enjoy the products",
+
+            ];
+            $('#myButton').on('click', function () {
+                var randomIndex = Math.floor(Math.random() * facts.length);
+                var randomFact = facts[randomIndex];
+                $("#productsList").text(randomFact);
+            });
+        });
+
+
+        // my Json data 
+
+        const productsData = {
+
+            "products": [
+
+                {
+                    "id": 1,
+                    "name": "Royal Canin Kitten",
+                    "Category": "Food",
+                    "Species": "Cat",
+                    "Expiry Date": "09/07/2026",
+                    "Age": "Adult",
+                    "Quantity": 1,
+                    "image":"https://cdn2.thecatapi.com/images/UhqCZ7tC4.jpg",
+                    "Kg": 15,
+
+                    "Price": [
+
+                        105.99
+                    ]
+                },
+                {
+                    "id": 2,
+                    "name": "Royal Canin ",
+                    "Category": "Food",
+                    "Species": "dog",
+                    "Expiry Date": "31/04/2026",
+                    "Age": "Adult",
+                    "Quantity": 1,
+                    "image": "https://images.dog.ceo/breeds/poodle-medium/WhatsApp_Image_2022-08-06_at_4.48.38_PM.jpg",
+                    "status": "success",
+                    "Kg": 18,
+                    "Price": [
+
+                        107.99
+                    ]
+                },
+                {
+                    "id": 3,
+                    "name": "7pcs Dog Brush Grooming Set ",
+                    "Category": "Brush",
+                    "Species": " Other Pets",
+                    "Age": "Adult",
+                    "image": "https://images.dog.ceo/breeds/terrier-irish/n02093991_1243.jpg",
+                    "Quantity": 1,
+                    "Price": [
+
+                        15.74
+                    ]
+                },
+                {
+                    "id": 4,
+                    "name": "Jumping Stars Cat Toys",
+                    "Category": "Toys",
+                    "Species": "Cat",
+                    "Quantity": 2,
+                    "image":"https://25.media.tumblr.com/tumblr_m1yuqjfdy31qejbiro1_500.jpg",
+                    "Price": [
+
+                        3.19
+                    ]
+                },
+                {
+                    "id": 5,
+                    "name": "Hugro Hemp Bedding",
+                    "Category": "Toys",
+                    "Species": "Rabbit",
+                    "Quantity": 1,
+                    "image":"12.jpeg",
+                    "Price": [
+
+                        18.19
+                    ]
+                },
+                {
+                    "id": 6,
+                    "name": "RROYAL CANIN Maxi Puppy",
+                    "Category": "Food",
+                    "Species": "Dog",
+                    "Expiry Date": "15/01/2026",
+                    "Age": "Puppy",
+                    "Quantity": 1,
+                    "image": "https://images.dog.ceo/breeds/mountain-swiss/n02107574_1387.jpg",
+                    "status": "success",
+                    "Kg": 15,
+                    "Price": [
+
+                        178.90
+                    ]
+                },
+                {
+                    "id": 7,
+                    "name": "AniOne Collections toy for cats",
+                    "Category": "Toy",
+                    "Species": "Cat",
+                    "image":"https://cdn2.thecatapi.com/images/0XYvRd7oD.jpg",
+                    "Quantity": 1,
+                    "Kg": 15,
+                    "Price": [
+
+                        10.80
+                    ]
+                },
+                {
+                    "id": 8,
+                    "name": "MultiFit staple food for aquarium fishes",
+                    "Category": "Food",
+                    "Species": "Fish",
+                    "Expiry Date": "09/05/2026",
+                    "Quantity": 1,
+                    "image":"fish2.jpeg",
+                    "Ml": 250,
+                    "Price": [
+
+                        9.30
+                    ]
+                },
+
+                {
+                    "id": 9,
+                    "name": "MultiFit staple food for aquarium fishes",
+                    "Category": "Food",
+                    "Species": "Fish",
+                    "Expiry Date": "10/05/2026",
+                    "Quantity": 1,
+                    "image":"fish2.jpeg",
+                    "Ml": 250,
+                    "Price": [
+
+                        7.30
+                    ]
+                },
+                {
+                    "id": 10,
+                    "name": "Go Native Duck with Apple",
+                    "Category": "Food",
+                    "Species": "Duck",
+                    "Expiry Date": "21/11/2026",
+                    "Quantity": 1,
+                    "image":"duck.jpg",
+                    "Kg": 12,
+                    "Price": [
+
+                        250.80
+                    ]
+                }
+
+            ]
+        };
+
+        const productsListDiv = document.getElementById('productsList');
+
+
+        const ul = document.createElement('ul');
+
+
+        productsData.products.forEach(product => {
+            const li = document.createElement('li');
+            li.innerHTML = `<div class="mydiv"> 
+        <strong>Name: ${product.name}</strong><br>
+        <strong>Category: ${product.Category}</strong><br>
+        <strong>Species: ${product.Species}</strong><br>
+        ${product.Expirydate ? "<strong>kg: ${product.Expirydate}</strong><br>" : ""}
+        <strong>Quantity: ${product.Quantity}</strong><br>
+        ${product.kg ? "<strong>kg: ${product.kg}</strong><br>" : ""}
+        <img src="${product.image}" class="myimage"></img><br>
+        <em>Price: ${product.Price}</em><br></div>
+    `;
+            ul.appendChild(li);
+        });
+
+        // Append the unordered list to the song list div
+        productsListDiv.appendChild(ul);
+
+        $(document).ready(function () {
+            $("img").on({
+                mouseenter: function () {
+                    $(this).attr("width", "400px");
+                },
+                mouseleave: function () {
+                    $(this).attr("width", "200px");
+                },
+                /*
+                click: function () {
+                    $(this).hide();
+                }
+                */
+            });
+        });
+    </script>
+  
+
+
+
+</body>
+
+</html>

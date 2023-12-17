@@ -1,0 +1,314 @@
+/*
+Vitor
+styling references:
+tables - https://www.youtube.com/watch?v=biI9OFH6Nmg&ab_channel=dcode
+nav bar - https://www.w3schools.com/css/css_navbar_horizontal.asp
+*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.searchP{
+  text-align: center;
+  margin-top: 50px;
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+/*navbar*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #607274;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #FAEED1;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #B2A59B;
+}
+.active {
+  background-color: #DED0B6;
+  color: #FAEED1;
+}
+/*table*/
+#tablePt, #tablePd{
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0, 9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: o o 20px rgba(0, 0, 0, 0.15);
+  margin-left: 20px;
+}
+#tablePt th, #tablePd th{
+  background-color: #607274;
+  color: #FAEED1;
+  text-align: left;
+  font-weight: bold;
+}
+#tablePt th , #tablePt td, #tablePd th , #tablePd td{
+  padding: 12px 15px;
+}
+#tablePt tr, #tablePd tr{
+  border-bottom: 1px solid #607274;
+}
+#tablePt tr:nth-of-type(even), #tablePd tr:nth-of-type(even){
+  background-color: #DED0B6;
+}
+#tablePt tr:last-of-type, #tablePd tr:last-of-type{
+  border-bottom: 2px solid #607274;
+}
+/*form*/
+.VForm{
+    text-align: left;
+    margin-top: 50px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.VForm input{
+    font-size: 20px;
+    width: 20%;
+}
+.VForm button{
+    font-family: 'Montserrat', sans-serif;
+    color: #555;
+    padding: 10px 15px;
+}
+/*end of Vitor's*/
+/**{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}*/
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    
+    
+    background-image: no-repeat;
+    background-image: url(background.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
+    background-image: no-repeat;
+    min-height: 100vh;
+
+}
+
+.lightbodytext{
+    margin-left: 300px;
+}
+.span .monoglobalWrap{
+    color:chartreuse;
+}
+
+h1{
+        display: inline-block;
+        font-size: 30px;
+        text-shadow: 1px 2px 0 rgba(0,0,0,0.2);
+        margin: 0px;
+        font-weight: 800;
+        text-align:center;
+        font-family:cursive;
+    
+ }
+
+    
+    
+    div.gallery {
+    border: 1px solid #ccc;
+    padding:0 10px;
+}
+          
+div.gallery:hover {
+border: 1px solid #777;
+}
+          
+div.gallery img {
+    width: 400px;
+     height: auto;
+
+ }
+          
+div.desc {
+    padding: 15px;
+    text-align: center;
+    color:rgb(131, 226, 43);
+ }
+          
+          * {
+            box-sizing: border-box;
+          }
+          
+          .responsive {
+            float: left;
+            width: 35%;
+            margin-bottom: 16px;
+            padding: 0 10px;
+            
+    
+          }
+          
+
+          @media only screen and (max-width: 700px) {
+            .responsive {
+              width: 49.99999%;
+              margin: 6px 0;
+            }
+          }
+          
+          @media only screen and (max-width: 500px) {
+            .responsive {
+              width: 100%;
+            }
+          }
+
+
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  label{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float:right;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+
+  
+  
+  /* Add a background color and some padding around the form */
+  .container_2{
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-top: 120px;
+    width:30%;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+
+    
+
+
+  }
+  .flexwrap{
+    text-align: center;
+    margin-top:0px;
+    font-size:15px;
+    background-color:#04AA6D;
+}
+
+.dog-image {
+    border: 2px solid antiquewhite;
+    padding: 2%;
+    height: 375px;
+    width: 375px;
+  }
+div.petBreed{
+    position: relative;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    padding: 5px;
+    width:30%;
+}
+div.catImageContainer{
+    position: relative;
+    float:right;
+    bottom:680px;
+    margin: 10px;
+    padding: 5px;
+    width:30%;
+
+}
+#imageContainer{
+    width:400px;
+    height:400px;
+}
+
+#catImage{
+    width:400px;
+    height:400px;
+
+}
+
+
+
+/*idil*/
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+
+}
+.myimage {
+  border: 2px solid rgb(42, 95, 95);
+}
+.mydiv {
+  border: 2px solid gray;
+  margin-bottom: 20px;
+  width: 500px;
+  text-align: center;
+
+}
+.myfood{
+  text-align: center;
+
+}
+button {
+  background-color:whitesmoke;
+  font-size: x-large;
+  font-size: larger;
+}
+ 
+/*prathibha*/
+.bordered-image {
+  border: 2px solid black; 
+  padding: 10px; 
+  margin: 5px; 
+  max-width: 100%;
+  height: auto;
+  display: inline-block; 
+}
